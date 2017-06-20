@@ -7,17 +7,39 @@
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
   </head>
   <body>
-    <header>Header
-      <nav>Nav</nav>
-    </header>
-    <section>
-      <input type="text" id="valor-a" />
-      <input type="text" id="valor-b" />
-      <button id='btn-calc'>Calular</button>
-    </section>
-    <footer>
-      Footer
-    </footer>
+    <form method="post" action="">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="inpt-name" class="form-control" placeholder="Digite o seu nome" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="inpt-email" class="form-control" placeholder="charmander@agumon.com" required>
+      </div>
+      <div>
+        <label for="born-date">Data de Nascimento</label>
+        <input type="date" name="born-date" id="inpt-born-date" class="form-control" required min="2017-05-01" max="2017-07-10">
+      </div>
+      <div>
+        <label for="gender">Sexo</label>
+        <input type="radio" name="sexo" id="masculino" class="radio-inline">
+        <label for="masculino">Masculino</label>
+        <input type="radio" name="sexo" id="feminino" class="radio-inline">
+        <label for="feminino">Feminino</label>
+      </div>
+      <div>
+        <label for="li">Li e aceito o contrato</label>
+        <input type="checkbox" name="li" id="inpt-li" class="checkbox-inline" required checked>
+      </div>
+      <div>
+        <label for="volume">Volume</label>
+        <input type="range" name="volume" id="inpt-volume" class="" required min="0" max="100" value="13">
+      </div>
+      <div>
+        <button type="submit" class="btn btn-success">Cadastrar</button>
+      </div>
+    </form>
     <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
   </body>
 </html>
