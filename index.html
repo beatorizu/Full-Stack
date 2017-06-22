@@ -10,7 +10,7 @@
     <form method="post" action="">
       <div class="form-group">
         <label for="name">Name</label>
-        <input type="text" name="name" id="inpt-name" class="form-control" placeholder="Digite o seu nome" required>
+        <input type="text" name="name" id="inpt-name" class="form-control" placeholder="Digite o seu nome" required autofocus>
       </div>
       <div class="form-group">
         <label for="email">Email</label>
@@ -36,6 +36,77 @@
         <input type="range" name="volume" id="inpt-volume" class="" required min="0" max="100" value="13">
       </div>
       <div>
+        <label for="meter">Batery</label>
+        <meter meter="meter" min="0" max="100" low="15" high="98" value="50"></meter>
+      </div>
+      <div>
+        <label for="progress">Caregando</label>
+        <progress meter="progress" min="0" max="100" low="15" high="98" value="50"></progress>
+      </div>
+      <div class="form-group">
+        <label for="year">Ano</label>
+        <input type="number" name="year" id="inpt-year" class="form-control" placeholder="Ano" min="0" max="100" value="50">
+      </div>
+      <div class="form-group">
+        <label for="color">Cor</label>
+        <input type="color" name="color" id="inpt-color" class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="url">URL</label>
+        <input type="url" name="url" id="inpt-url" class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="search">Busca</label>
+        <input type="search" name="search" id="inpt-search" class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="abstract">Resumo</label>
+        <textarea name="abstract" id="inpt-abstract" class="form-control" cols="30" rows="10"></textarea>
+      </div>
+      <div class="form-group">
+        <label for="estado">Estado</label>
+        <select name="estado" id="inpt-estado" multiple size="3">
+          <optgroup label="Sudeste">
+            <option value="SP">São Paulo</option>
+            <option value="RJ">Rio de Janeiro</option>
+          </optgroup>
+          <optgroup label="Nordestes">
+            <option value="PE" selected>Pernambuco</option>
+            <option value="BA">Bahia</option>
+          </optgroup>
+          <optgroup label="Sul">
+            <option value="SC">Santa Catarina</option>
+            <option value="PR">Paraná</option>
+          </optgroup>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="password">Senha</label>
+        <input type="password" name="password" id="inpt-pwd" class="form-control">
+      </div>
+      <input type="hidden" name="inpt-id" value="1">
+      <div class="form-group">
+        <label for="month">Mês</label>
+        <input type="month" name="month" id="inpt-month" class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="week">Semana</label>
+        <input type="week" name="week" id="inpt-week" class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="time">Horário</label>
+        <input type="time" name="time" id="inpt-time" class="form-control">
+      </div>
+      <div class="form-group">
+        <input type="text" list="navegadores">
+        <datalist id="navegadores">
+          <option value="Edge"></option>
+          <option value="Firefox"></option>
+          <option value="Safari"></option>
+          <option value="Chrome"></option>
+        </datalist>
+      </div>
+      <div class="form-group">
         <button type="submit" class="btn btn-success">Cadastrar</button>
       </div>
     </form>
